@@ -1,0 +1,65 @@
+<!-- 
+? LISTS
+* Unordered lists have basic styles
+* They use the circle list style
+    * Nested lists styled to feel right
+    * Can nest either type of list into the other
+* Just more list items mama san
+
+1.Ordered lists also have basic styles
+2.They use the decimal list style
+    * Ordered and unordered can be nested
+    * Can nest either type of list into the other
+3. Last list item just for the fun
+
+<ul>
+  <li>Item 1</li>
+  <li>
+    Item 2
+    <ul>
+      <li>Item 2.1</li>
+      <li>Item 2.2</li>
+    </ul>
+  </li>
+  <li>Item 3</li>
+</ul>
+
+!-- Easily substitute any <ul> or an <ol> to get number lists or sublists. 
+!   Skeleton doesn't support lists nested deeper than 2 levels --
+-->
+
+
+<title>Lists - Skeleton</title>
+<link rel="stylesheet" href="../src/normalize.css">
+<link rel="stylesheet" href="../src/skeleton.css">
+
+<style>
+    body {
+        margin-top: 40px;
+
+    }
+</style>
+
+<body>
+    <div class="container">
+        <div class="row">
+           <div class="six columns">
+               <h3>Programming Languages</h3>
+               <!-- or <ul> instead of <ol> -->
+               <ol>
+                   <li>Java</li>
+                   <li>Rust</li>
+                   <li>
+                       Web Languages
+                       <ul>
+                            <li>JavaScript</li>
+                            <li>CSS</li>
+                            <li>HTML</li>
+                       </ul>
+                   </li>
+                   <li>Perl</li>
+               </ol>
+           </div> 
+        </div>
+    </div>
+</body>
